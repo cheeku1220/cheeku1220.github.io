@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEM7SCHEDULE</title>
+    <script src="/Users/sharma/Documents/Web Development/udemy.js"></script>
+    
+    <style>
+        th{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            padding:22px;
+            background-color: aliceblue;
+        }
+        td:nth-of-type(1){
+            padding:22px;
+            background-color:cornsilk ;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .hoverin:hover{
+            background-color:lightblue;
+            /* box-shadow:10px 10px 10px black; */
+        }
+        .hoverin{
+            background-color:mintcream;
+        }
+        td:nth-last-of-type(2n+1){
+            background-color: lavenderblush;
+        }
+        td[onclick="dialog(id)"]{
+            cursor: pointer;
+        }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 200px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%;
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /*Black w/ opacity*/
+        }
+
+/* Modal Content */
+        .modal-content {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color:antiquewhite;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid black;
+            width: 20%;
+            border-radius: 23px;
+        }
+
+/* The Close Button */
+        .close {
+            /* border: solid black; */
+            /* border-radius: 50%; */
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,.close:focus {
+            color:red;
+            text-decoration: none;
+            cursor: pointer;
+        }
+</style>
+</head>
+<body style="background-color:paleturquoise;border:2px solid black;border-bottom:none;border-radius: 23px;margin:auto;">
+    <h1 style="color:#000;text-align:center;text-decoration:dotted underline">SEM VII SCHEDULE</h1>
+    <center>
+    <table border=3px; style=margin-top:100px;border-collapse:collapse;>
+        <tr>
+            <th>DAY</th>
+            <th>8am-9am</th>
+            <th>9am-10am</th>
+            <th>10am-11am</th>
+            <th>11am-12pm</th>
+            <th>12pm-1pm</th>
+            <th>1pm-2pm</th>
+            <th>2pm-3pm</th>
+            <th>3pm-4pm</th>
+            <th>4pm-5pm</th>
+        </tr>
+        <tr>
+            <td>Monday</td>  
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin onclick=dialog(id) id="rba" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19EEI471</td>
+            <td class=hoverin onclick=dialog(id) id="ads" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS445</td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin onclick=dialog(id) id="intern" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS493</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td class=hoverin onclick=dialog(id) id="csd" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS495</td>
+            <td class=hoverin onclick=dialog(id) id="csd" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS495</td>
+            <td class=hoverin onclick=dialog(id) id="embdlab" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS431P</td>
+            <td class=hoverin onclick=dialog(id) id="embdlab" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS431P</td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin onclick=dialog(id) id="rba" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19EEI471</td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin onclick=dialog(id) id="org" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19EHS403</td>
+            <td class=hoverin onclick=dialog(id) id="cyblab" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS457P</td>
+            <td class=hoverin onclick=dialog(id) id="cyblab" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS457P</td>
+            <td class=hoverin onclick=dialog(id) id="proj" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS491</td>
+            <td class=hoverin onclick=dialog(id) id="proj" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS491</td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin onclick=dialog(id) id="embd" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS431</td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td class=hoverin onclick=dialog(id) id="adslab" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS445P</td>
+            <td class=hoverin onclick=dialog(id) id="adslab" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS445P</td>
+            <td class=hoverin onclick=dialog(id) id="rba" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19EEI471</td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin onclick=dialog(id) id="cyb" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS457</td>
+            <td class=hoverin onclick=dialog(id) id="org" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19EHS403</td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin onclick=dialog(id) id="embd" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS431</td>
+            <td class=hoverin onclick=dialog(id) id="csd" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS495</td>
+            <td class=hoverin onclick=dialog(id) id="csd" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS495</td>
+            <td class=hoverin onclick=dialog(id) id="ads" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS445</td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+            <td class=hoverin onclick=dialog(id) id="cyb" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19ECS457</td>
+            <td class=hoverin onclick=dialog(id) id="org" style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">19EHS403</td>
+            <td class=hoverin style="text-shadow:1px 1px; padding: 15px; text-align:center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></td>
+        </tr>
+    </table>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="lookforit"></p>
+        </div>
+      
+    </div>
+      
+    </center>
+</body>
+
+</html>
