@@ -38,19 +38,19 @@
 // var p=re.map(r => r.toUpperCase());
 
 function dialog(ide) {
-    const sub_decode = {
-        EEI471: "Robotics and Automation",
-        ECS445: "Adhoc and Sensor Networks",
-        ECS445P:"Adhoc and Sensor Networks Lab",
-        ECS493: "Internship",
-        ECS431: "Embedded Systems",
-        ECS431P: "Embedded Systems Lab",
-        ECS457: "Cyber Forensics",
-        ECS457P: "Cyber Forensics Lab",
-        ECS495: "Comprehensive Skill Development VI",
-        ECS491: "Project Phase I",
-        EHS403:"Organisational Behavior"
-    }
+    // const sub_decode = {
+    //     EEI471: "Robotics and Automation",
+    //     ECS445: "Adhoc and Sensor Networks",
+    //     ECS445P:"Adhoc and Sensor Networks Lab",
+    //     ECS493: "Internship",
+    //     ECS431: "Embedded Systems",
+    //     ECS431P: "Embedded Systems Lab",
+    //     ECS457: "Cyber Forensics",
+    //     ECS457P: "Cyber Forensics Lab",
+    //     ECS495: "Comprehensive Skill Development VI",
+    //     ECS491: "Project Phase I",
+    //     EHS403:"Organisational Behavior"
+    // }
 
     var modal = document.getElementById("myModal");
     var span = document.getElementsByClassName("close")[0];
