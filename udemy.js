@@ -59,10 +59,10 @@ function dialog(ide) {
         content.innerHTML = "Course: Robotics and Automation<br><br>Faculty: Md Waliuddin<br><br>Room: ICT-608B";
     }
     else if (ide === "ads") {
-        content.innerHTML = "Course: Adhoc and Sensor Networks<br><br>Faculty: Sapna<br><br>Room: ICT-603A";
+        content.innerHTML = "Course: Adhoc and Sensor Networks<br><br>Faculty: Umashankar Ghugar<br><br>Room: ICT-603A";
     }
     else if (ide === "adslab") {
-        content.innerHTML = "Course: Adhoc and Sensor Networks Lab<br><br>Faculty: Sapna<br><br>Room: ICT-310-Grady Booch Case Tools Lab";
+        content.innerHTML = "Course: Adhoc and Sensor Networks Lab<br><br>Faculty: Umashankar Ghugar<br><br>Room: ICT-310-Grady Booch Case Tools Lab";
     }
     else if (ide === "intern") {
         content.innerHTML = "Internship<br><br>Faculty: Malarselvi S<br><br>Room: ICT-516";
